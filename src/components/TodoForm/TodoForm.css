@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Oswald:wght@600&display=swap');
+
+*, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    user-select: none;
+}
+
+body {
+    font-family: 'Cardo', serif;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('https://images.wallpaperscraft.com/image/mountains_sky_evening_138446_1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.container__inner{
+    background: inherit;
+    width: 380px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -190px;
+    margin-top: -225px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container__inner:before{
+    content: "";
+    width: 430px;
+    height: 500px; 
+    background: inherit; 
+    position: absolute;
+    left: -25px;
+    right: 0;
+    top: -25px; 
+    bottom: 0;
+    box-shadow: inset 0 0 0 500px rgba(255,255,255,0.1);
+    filter: blur(10px);
+}
+
+.caption{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #ffce00;
+}
+
+.todo-form{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.submit__button {
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 30px;
+    top: 15px;
+}
+
